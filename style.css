@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@500&display=swap');
+
+:root {
+    --color-terminal: #292b36;
+    --borde-redondo: 4px;
+}
+
+* {
+    font-family: 'Source Code Pro', monospace;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #5c4b7a;
+    color: white;
+
+}
+
+input, button {
+    border: none;
+    outline: none;
+}
+
+main {
+    padding: 25px;
+    box-shadow: 8px 8px 35px 0px rgb(0 0 0 / 75%);
+    border-radius: var(--borde-redondo);
+}
+
+h1 {
+    margin: 0;
+}
+
+#input-original, #resultado {
+    background-color: var(--color-terminal);
+    width: -webkit-fill-available;
+}
+
+#input-original {
+    margin: 10px 0 0;
+    padding: 10px;
+    color: white;
+    border-radius: var(--borde-redondo);
+}
+#button-original {
+    margin: 10px 0 0;
+    padding: 10px;
+    color: white;
+    border-radius: var(--borde-redondo);
+}
+
+#res {
+    height: 20px;
+    background-color: aqua;
+    color: #5af78d;
+    padding: 0 10px 10px;
+    border-radius: var(--borde-redondo);
+}
+#des-resu {
+    height: 20px;
+    background-color: aqua;
+    color: #5af78d;
+    padding: 0 10px 10px;
+    border-radius: var(--borde-redondo);
+
+}
+
+#cif-resu {
+    height: 20px;
+    background-color: aqua;
+    color: #5af78d;
+    padding: 0 10px 10px;
+    border-radius: var(--borde-redondo);
+}
+
+.rango {
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: 1fr 30px;
+    text-align: center;
+    align-items: center;
+}
+
+input[type='range'] {
+    -webkit-appearance: none;
+    border-radius: var(--borde-redondo);
+    background:var(--color-terminal);
+    margin: 0;
+    padding: 0 5px;
+    height: 20px;
+}
+
+input[type='range']::-webkit-slider-thumb {
+    cursor: pointer;
+    -webkit-appearance: none;
+    background:#bfa1e2;
+    border-radius: 50%;
+    height:10px;
+    width:10px;
+}
+
+*{
+    background-color: rgb(33, 141, 141);
+    font-size: 20px;
+    font-family: 'Roboto';
+    
+}
+
+.Botones-tipo-cfrado{
+    background-color: var(--color-terminal);
+    width: -webkit-fill-available;
+}
+
+#cadena {
+    color: white;
+    border-color: #bfa1e2;
+}
+
+#llave {
+    color: white;
+    border-color: #bfa1e2;
+}
+
+#mes {
+    color: white;
+    border-color: #bfa1e2;
+}
+
+img {
+    
+}
+

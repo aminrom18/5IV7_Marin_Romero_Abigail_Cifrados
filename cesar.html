@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="montar.js">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="index.html">
+    <title>Cifrando con césar</title>
+</head>
+<body>
+   <img src="https://i.pinimg.com/originals/2a/87/f0/2a87f09b848edc581e7dd80ca2b0afb9.gif" alt="Ya no quiero programar">
+    <main>
+        <h1>César :)</h1>
+    <!--Aquí va el texto que se va a cifrar-->
+    <p>Escribe el texto que desas cifrar</p>
+    <textarea name="cadenita" id="cadena" spellcheck="false" ></textarea>
+    <br>
+
+    <!--Se marca el número de posiciones que se moverá el texto-->
+    <div class="posdes"> 
+        <input type="range" id="desplazamiento" value="5" min="1" max="26" oninput="this.nextElementSibling.value = this.value">
+        <output>5</output>
+    </div>
+
+    <!--Bptón qeu va a cifrar-->
+    <input type="button" value="cifrar" onclick="cifrar()" id="input-original">
+    <br>
+    <div id="cif-resu"></div> <!--Se muestra el texto cifrado-->
+    <br>
+
+    <!--Botón que va a descifrar-->
+    <input type="button" value="descifrar" onclick="descifrar()" id="input-original">
+    <br>
+    <div id="des-resu"></div> <!--Se muestra el texto descifrado-->
+    <br>
+
+</main>
+</body>
+</html>

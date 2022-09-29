@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="montar.js">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="index.html">
+    <title>Cifrando con vigenère</title>
+</head>
+<body>
+    <img src="http://pa1.narvii.com/6393/0cf803c00adb75abb53a5f78c12bb4c12ec99d00_00.gif" alt="">
+    <main>
+        
+        <h1>Vigenère :)</h1>
+        <br>
+    <div class="selec-cif" id="selcif">
+        <p>Escribe el texto a cifrar: </p>
+    </div>
+
+    <!--Aquí va el texto que se va a cifrar-->
+    <textarea name="textovin" id="mes"> </textarea>
+    <br>
+
+
+    <!--Aquí va la llave para descifrar-->
+    <p>Escribe tu llave para descifrar: </p>
+    <textarea name="llavecita" id="llave"> </textarea>
+
+
+    <!--Botón que va a cifrar, se se apachurra el texto cifrado se mostrará en...-->
+    <input type="button" value="cifrar" onclick="llave(mess)" id="input-original">
+    <br>
+    <div id="res"></div> <!--... aquí se mostrará el texto cifrado, el resultado -->
+    <br>
+
+
+    <!--Botón que va a descifrar, utiliza la llave y regresa a lo anterior-->
+    <input type="button" value="descifrar" onclick="res(llave, mess)" id="input-original">
+    <div id="res"></div> <!--Se mostrá aquí el texto descifrado-->
+
+</main>
+</body>
+</html>
